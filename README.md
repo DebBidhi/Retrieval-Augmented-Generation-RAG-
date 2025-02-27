@@ -1,2 +1,2 @@
 # Retrieval-Augmented-Generation-RAG-
-![image](https://github.com/user-attachments/assets/7a634db2-7e67-40fe-883f-9589729ebe33)
+![image](https://github.com/user-attachments/assets/a84becd7-9063-4eb7-8c61-d64e2dd799f8)
