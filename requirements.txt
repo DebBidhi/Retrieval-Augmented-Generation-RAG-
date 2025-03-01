@@ -3,3 +3,5 @@ llama_index.vector_stores.qdrant
 llama_index.core
 llama_index
 llama_index.embeddings.huggingface
+requests
+llama_index.llms.ollama
