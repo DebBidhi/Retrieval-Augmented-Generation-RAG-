@@ -10,10 +10,16 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Install Jupyter Notebook
+RUN pip install jupyter
+
 # Install additional dependencies for Qdrant and Ollama
 RUN apt-get update && \
     apt-get install -y curl && \
     curl https://ollama.com/install.sh | sh
+
+# Install Llama 3.2:1b using Ollama // change this to any opensource model for local use
+RUN ollama install llama3.2:1b
 
 # Expose the port that Qdrant uses
 EXPOSE 6333
