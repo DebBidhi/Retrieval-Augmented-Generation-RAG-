@@ -1,4 +1,9 @@
 nest-asyncio
 qdrant-client
-llama-index
 huggingface-hub
+transformers
+torch
+llama-index>=0.9.0
+llama-index-vector-stores-qdrant
+llama-index-embeddings-huggingface
+llama-index-llms-ollama

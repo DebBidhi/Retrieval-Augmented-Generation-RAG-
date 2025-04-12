@@ -1,28 +1,35 @@
 # Retrieval-Augmented Generation (RAG) System
 
 ## Project Overview
-This project demonstrates a Retrieval-Augmented Generation (RAG) system that utilizes Qdrant and Llama Index to enhance document retrieval and question answering. By integrating vector stores with advanced language models, it ensures efficient and accurate information retrieval.
+This project demonstrates a Retrieval-Augmented Generation (RAG) system that utilizes Qdrant and Llama Index to enhance document retrieval and improve question answering. By integrating vector stores with advanced language models, it ensures efficient and accurate information retrieval.
 
 ## Installation Guide
 1. **Clone the Repository:**
-   To get started, clone the repository to your local machine:
+   Start by cloning the repository to your local machine:
    ```bash
    git clone https://github.com/DebBidhi/Retrieval-Augmented-Generation-RAG-
    cd Retrieval-Augmented-Generation-RAG-
    ```
-2. **Set Up and Launch Docker Services:**
-   The Dockerfile is pre-configured to install all necessary Python dependencies, eliminating the need for manual installation. If you prefer to use a different open-source model, modify the Dockerfile during the Ollama installation process. Also, update the notebook to reflect the model change:
-   ```python
-   llm = Ollama(model="your-model-name", request_timeout=120.0)
+
+2. **Install Docker:**
+   Ensure Docker is installed on your system. You can download it from [Docker's official website](https://www.docker.com/get-started).
+
+3. **Install Ollama:**
+   Make sure Ollama is installed on your system to manually install the open-source model. You can find installation instructions on [Ollama's website](https://ollama.com).
+
+4. **Install the Open-Source Model:**
+   Use Ollama to install your preferred open-source model:
+   ```bash
+   ollama run deepseek-r1:7b
    ```
-   Next, execute:
+
+5. **Launch Docker Services:**
+   Use Docker Compose to set up the local vector store (Qdrant) and other services:
    ```bash
    docker-compose up
    ```
-   This will install Ollama and the open-source model, which may take some time depending on your internet speed.
 
 ## Usage Instructions
-- Run the Jupyter notebooks within the Docker container to explore the RAG system's capabilities.
-- Use `notebook.ipynb` to set up the vector store and index your documents.
-- Access the Qdrant vector database at `http://localhost:6333` to view and manage your vector data.
-- Open `notebook.ipynb` in your browser at `http://localhost:8888` to interact with the Jupyter notebook interface seamlessly.
+- Ensure Ollama is installed and the model is set up.
+- Run the Jupyter notebooks within the Docker container to explore the RAG system's features.
+- Use `notebook.ipynb` to configure the vector store and index your documents.
