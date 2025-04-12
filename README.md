@@ -22,7 +22,6 @@ This project implements a Retrieval-Augmented Generation (RAG) system using Qdra
 ## Usage
 - Run the Jupyter notebooks to explore the RAG system.
 - Use the `notebook.ipynb` for setting up the vector store and indexing documents.
-- Use the `RAG_Evaluation.ipynb` for evaluating the retrieval and generation capabilities.
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
